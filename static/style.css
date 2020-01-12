@@ -1,0 +1,151 @@
+html, body{
+  text-align: justify;
+  background-image: url('images/pozadina.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+  left: 0;
+  right: 0;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+nav:a {
+  text-align: center;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.bg-dark {
+    background-color: blue !important;
+}
+
+.bg-light {
+    background-color: green !important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+.list-group-item {
+  border: none
+}
+
+#drop {
+  background-color: lightgreen;
+}
+
+#podaci {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+#prva_slika {
+  margin-top: 14%;
+}
+
+.srednji_sadrzaj_footera {
+  margin-top: 0;
+}
+
+.slike_pocetne_strane {
+  z-index: 0;
+  height: 259px;
+  width: 362px;
+}
+
+.footer {
+  background-color: #154454;
+  color: white;
+  font-weight: bold;
+}
+
+.dno {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.footer_sadrzaj {
+  padding: 4%;
+}
+
+.sadrzaj_pocetne {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+#wiener {
+  height: 179px;
+  width: 282px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.text-primary {
+  font-weight: normal;
+  font-size: 24px;
+}
