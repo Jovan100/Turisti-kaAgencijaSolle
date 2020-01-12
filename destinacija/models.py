@@ -24,7 +24,7 @@ class KategorijaDestinacije(models.Model):
 class Agencija(models.Model):
     naziv = models.CharField(max_length=100, unique=True)
 
-    def __str__(slef):
+    def __str__(self):
         return self.naziv
 
     class Meta:
