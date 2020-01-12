@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<img src="../../static/images/solle.png" alt="Solle" class="mx-auto d-block" id="prva_slika"><hr>
+<div id="podaci">
+  <i class="fa fa-address-card"> Adresa: Vojvode Radomira Putnika 21, Pančevo; ULAZ IZ KARAĐORĐEVE</i><br>
+  <i class="fa fa-phone-square"> Telefoni: 013/335-144 i 013/21-000-11</i><br>
+  <i class="fa fa-hourglass-half"> Radno vreme: radnim danima od 09h do 19h; subotom od 09h do 14h</i>
+</div><hr>
+
+<div class="sadrzaj_pocetne">
+  <div class="container">
+    <div class="row">
+      <div class="col"><a href="#"><img src="../../static/images/grcka.jpg" alt="Grčka" class="img-thumbnail slike_pocetne_strane"></a></div>
+      <div class="col"><img src="../../static/images/letovanje.jpg" alt="Letovanja 2020" class="img-thumbnail slike_pocetne_strane"></div>
+    </div><br>
+    <div class="row">
+      <div class="col"><a href="#"><img src="../../static/images/metropole.jpg" alt="Metropole" class="img-thumbnail slike_pocetne_strane"></div>
+      <div class="col"><a href="#"><img src="../../static/images/hoteli.jpg" alt="Grčka Hoteli" class="img-thumbnail slike_pocetne_strane"></a></div>
+    </div>
+  </div>
+</div><hr>
+
+
+
+{% endblock %}
