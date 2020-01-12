@@ -1,5 +1,6 @@
 from django.contrib import admin
 from korisnik.models import Korisnik
+from django.contrib.auth.models import Group
 
 class KorisnikAdmin(admin.ModelAdmin):
     search_fields = ['ime', 'prezime', 'email']
@@ -8,3 +9,4 @@ class KorisnikAdmin(admin.ModelAdmin):
         model = Korisnik
 
 admin.site.register(Korisnik, KorisnikAdmin)
+admin.site.unregister(Group)
