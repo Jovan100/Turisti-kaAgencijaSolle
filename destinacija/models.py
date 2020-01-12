@@ -19,3 +19,12 @@ class KategorijaDestinacije(models.Model):
 
     class Meta:
         verbose_name_plural = "Kategorije Destinacija"
+
+class Agencija(models.Model):
+    naziv = models.CharField(max_length=100, unique=True)
+
+    def __str__(slef):
+        return self.naziv
+
+    class Meta:
+        verbose_name_plural = "Agencije"
