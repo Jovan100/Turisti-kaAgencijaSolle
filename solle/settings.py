@@ -30,7 +30,7 @@ DEBUG = os.environ['DEBUG'],
 
 ALLOWED_HOSTS = []
 
-
+AUTH_USER_MODEL = 'korisnik.Korisnik'
 # Application definition
 
 INSTALLED_APPS = [
