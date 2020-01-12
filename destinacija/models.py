@@ -1,4 +1,5 @@
 from django.db import models
+from destinacija.validators import validate_file_extension
 
 class Zemlja(models.Model):
     naziv = models.CharField(max_length=100, unique=True)
@@ -42,3 +43,18 @@ class Destinacija(models.Model):
 
     class Meta:
         verbose_name_plural = "Destinacije"
+
+
+class Cenovnik(models.Model):
+    naziv = models.CharField(max_length=100, unique=True)
+    destinacija = models.ForeignKey(Destinacija, on_delete=models.CASCADE)
+    agencija = models.ForeignKey(Agencija, on_delete=models.CASCADE)
+    broj_nocenja = models.CharField(max_length=100)
+    polasci = models.CharField(max_length=100, blank=True, null=True)
+    fajl = models.FileField(upload_to='cenovnici', validators=[validate_file_extension])
+
+    def __str__(self):
+        return self.naziv
+
+    class Meta:
+        verbose_name_plural = "Cenovnici"
