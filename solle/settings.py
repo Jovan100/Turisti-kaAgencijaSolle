@@ -77,7 +77,14 @@ WSGI_APPLICATION = 'solle.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'turisticka_agencija_solle',
+	    'USER': os.environ['DB_USER'],
+	    'PASSWORD': os.environ['DB_PASSWORD'],
+	    'HOST': os.environ['HOST'],
+	    'PORT': os.environ['PORT'],
+    }
 }
 
 
