@@ -17,3 +17,6 @@ class UsloviPutovanjaView(TemplateView):
 
 class TuristickiPojmoviView(TemplateView):
     template_name = 'destinacija/turisticki_pojmovi.html'
+
+class PutnoOsiguranjeView(TemplateView):
+    template_name = 'destinacija/putno_osiguranje.html'
