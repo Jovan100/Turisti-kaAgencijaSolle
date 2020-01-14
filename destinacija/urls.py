@@ -7,4 +7,5 @@ urlpatterns = [
     path('Turistički_Pojmovi/', TuristickiPojmoviView.as_view(), name='turisticki_pojmovi'),
     path('Putno_Osiguranje/', PutnoOsiguranjeView.as_view(), name='putno_osiguranje'),
     path('Avio_Karte/', AvioKarteView.as_view(), name='avio_karte'),
+    path('O_Nama/', ONamaView.as_view(), name='o_nama'),
 ]
