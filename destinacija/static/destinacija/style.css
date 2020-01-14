@@ -30,3 +30,22 @@
   height: 259px;
   width: 362px;
 }
+
+.turisticki_pojmovi {
+  margin-top: 14%;
+  padding: 2%;
+  margin-bottom: 5%;
+  background-color: #E0FFFF;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: inline-block;
+}
+
+.fa-certificate::before {
+  color: orange;
+}
