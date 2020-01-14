@@ -1,0 +1,147 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="turisticki_pojmovi">
+  <b>Naši putnici, redovno, prilikom kupovine aranžmana ili avio karata nailaze na niz termina, skraćenica i šifri koje označavaju razne vrste usluga, obaveza, pravila i dr. Imajući u vidu da putnik ne treba da bude “a priori” upoznat sa turističkom terminologijom, nudimo Vam kompletno objašnjenje najčešće korišćenih termina u turizmu…</b><hr>
+
+  <h4>Generalni izrazi</h4>
+
+  <ul>
+    <li class="fa fa-certificate"> VOUCHER – Putni dokument koji izdaje turistička agencija, u kome se nalaze podaci o hotelu, trajanju aranžmana, vrsti usluga, transferima i sl.</li>
+    <li class="fa fa-certificate"> ADL – Adult – Oznaka za odraslu osobu</li><br>
+    <li class="fa fa-certificate"> CHD – Child – Oznaka za dete</li><br>
+    <li class="fa fa-certificate"> INF – Infant – Oznaka za bebu</li><br>
+    <li class="fa fa-certificate"> PAX – Oznaka za ukupan broj osoba koje koriste neku uslugu. Pod pojmom “pax” su obuhvaćeni i odrasli i deca, jedino nisu obuhvaćene bebe.</li>
+    <li class="fa fa-certificate"> VIP – Very Important Person – Veoma važna osoba, koja koristu uslugu agencije i kojoj treba posvetiti posebnu pažnju. To su najčešće ministri, državnici, ličnosti iz javnog života…</li>
+    <li class="fa fa-certificate"> BTO – Oznaka za boravišnu taksu. Najčešće se na nju nailazi u domaćem turizmu. Izražava se za boravak u određenom objektu po danu i po osobi.</li>
+    <li class="fa fa-certificate"> OW – Autobuska, avionska, vozna ili brodska karta u jednom pravcu</li><br>
+    <li class="fa fa-certificate"> RT – Autobuska, avionska, vozna ili brodska povratna karta</li><br>
+    <li class="fa fa-certificate"> TRSF – Onaka za transfer (od/do aerodroma, hotela…)</li><br>
+    <li class="fa fa-certificate"> OW TRSF – One way transfer – transfer u jednom pravcu</li><br>
+    <li class="fa fa-certificate"> RT TRSF – Return transfer – povratni transfer</li>
+    <li class="fa fa-certificate"> OVERBOOKING – Termin koji označava prekoračenu popunjenost hotela, restorana ili prevoznog sredstva i pokazuje da je izvršen veći broj rezervacija u odnosu na raspoloživi kapacitet.</li>
+    <li class="fa fa-certificate"> PAKET  ARANŽMAN – Paket aranžman podrazumijeva kompletnu organizaciju putovanja od strane touroperatora. U to spada prevoz do izabrane destinacije, avionom ili autobusom, transferi do hotela, smeštaj u hotelima na bazi usluge noćenja sa doručkom, polupansiona, punog pansiona ili all inclusiva, a često u cenu paket aranžmana su uključeni i izleti. Obicno je cena iskazana po osobi.</li>
+    <li class="fa fa-certificate"> FAKULTATIVNI IZLETI – Izleti koje organizuje lokalna agencija, uz plaćanje na licu mjesta u lokalnoj valuti, bez odgovornosti organizatora putovanja ili predstavnika agencije za kvalitet i povoljnost cene.</li>
+    <li class="fa fa-certificate"> TURISTIČKI VODIČ – Objašnjava i pokazuju turistima prirodne lepote i retkosti, kulturno-istorijske spomenike, umetnička dela i etnografske znamenitosti. Pričaju turistima o važnim istorijskim događajima i osobama vezanim uz određene lokalitete, građevine i istorijska razdoblja. Takođe daju informacije o pojedinim mestima i područjima te aktuelnim privrednim i političkim zbivanjima. Turistički vodiči obično predvode grupu turista i pružaju im navedene informacije na jeziku grupe ili na nekom od svjetskih jezika. Moraju delovati sigurno i suvereno vladati podacima koje pružaju te biti spremni na dodatna pitanja.</li>
+    <li class="fa fa-certificate"> TURISTIČKI PRATILAC (Pratilac grupe) Obavlja operativne poslove u vođenju i praćenju turista te daju turistima osnovne informacije o svrsi putovanja. Brinu se o potrebnim ispravama pri prelascima granica, rešavaju probleme oko smeštaja organizovanih turističkih grupa te daju mnoge praktične savjete (kako i gdje mijenjati novac, koji su restorani dobri, što se povoljno može kupiti itd.) kako bi turistima olakšali boravak i učinili ga ugodnijim.</li>
+    <li class="fa fa-certificate"> PREDSTAVNIK AGENCIJE – Putuje sa grupom ili sačekuje grupu na destinaciji i boravi na licu mesta u cilju kvalitetnog ispunjenja obaveza organizatora putovanja i pružanja pomoći i informacija, vezanih za boravak i aktivnosti turista. Predstavnik sa gostima komunicira po unapred utvrđenom redosledu: 1. preko info tabli istaknutim u smeštajnom objektu, 2. putem redovnih dežurstava u smeštajnom objektu ili u lokalnoj agenciji, 3. putem mobilnog telefona za hitne slučajeve. Ne znači da je u smeštajnom objektu i na raspolaganju 24 sata.</li>
+  </ul>
+  <hr>
+  <h4>Hotelski smeštaj</h4>
+
+  <ul>
+    <li class="fa fa-certificate"> HOTEL – smeštajni objekat koji ima recepciju, kao i sve ostale pripadajuće hotelske sadržaje i sastoji se od više tipova soba. Kategorija se definiše zvezdicama ili slovima i organizator ne može garantovati kvalitet lokalne kategorizacije.</li>
+    <li class="fa fa-certificate"> VILLAGE, RESORT I CLUB – kompleks koji se sastoji iz više objekata, tzv bungalova i depadansa (smeštajnih i recepcije sa lobijem kao i ostalih pripadajućih hotelskih sadržaja). Sastoji se od više tipova soba, a kategorija se definiše zvezdicama ili slovima i organizator ne može garantovati kvalitet lokalne kategorizacije.</li>
+    <li class="fa fa-certificate"> HOTEL APARTMANSKOG TIPA – smeštajni objekat koji ima recepciju, neretko i mali lobi, a smeštajne jedinice su studiji i apartmani, a ponekada i sobe 1/1, 1/2, 1/3, 1/4… soba ili apartman/studio (jednokrevetna, dvokrevetna, trokrevetna, četvorokrevetna soba ili apartman ili studio) 1/2 + 1 ili dvokrevetna + 1 (1/3+1, 1/4+1 …dvokrevetni, trokrevetni, cetvorokrevetni… studio ili apartman sa ležajem koji nije standardnih dimenzija, a uračunat je u cenu i koji mogu koristiti odrasle osobe i deca (provjeriti u opisu u katalogu)</li>
+    <li class="fa fa-certificate"> KATEGORIJA HOTELA ILI VILE – definiše kvalitet smeštaja u vilama,hotelima, apartmanima ali i kvalitet hrane i usluge u hotelima, a simbol oznake (slovo ili zvezdica) zavisi od lokalnih zakona</li>
+    <li class="fa fa-certificate"> BUDGET SMJEŠTAJ – smeštaj putnika u apartmane ili hotele  po izboru organizatora putovanja ili lokalnog partnera. Prihvatanjem programa putovanja, putnik ne može uticati na izbor smeštaja i lokaciju</li>
+    <li class="fa fa-certificate"> CHECK IN – neophodna procedura na recepciji hotela, pre ulaska u hotelsku sobu, kada putnik pokazuje odgovornom licu svoj voucher, a ponekad mora da popuni i formular sa ličnim podacima, nakon čega dobija ključ od sobe.</li>
+    <li class="fa fa-certificate"> CHECK OUT – neophodna procedura prilikom napuštanja hotela. Putnik je tada dužan da vrati ključ od sobe i da izmiri eventualne troškove telefona, mini-bara i sl.</li>
+    <li class="fa fa-certificate"> LOBI – prostor pored recepcije sa stolovima i stolicama (foteljama)</li><br>
+    <li class="fa fa-certificate"> POOL  – bazen</li><br>
+    <li class="fa fa-certificate"> SNACK BAR – bar koji pored pića služi i raznu laganu hranu kao što su tost, salate, pica, sendviči…</li><br>
+    <li class="fa fa-certificate"> JACUZZI – kada ili mali bazen sa hidro masažerima</li><br>
+    <li class="fa fa-certificate"> FITNESS  ILI TRIM  STAZA – prostor sa spravama za vežbanje i sticanje kondicije</li><br>
+    <li class="fa fa-certificate"> SAUNA (FINSKA) – mali zatvoren prostor sa drvenim klupama i temperaturom od 60 – 90 stepeni u koji vazduh ulazi kroz električnu peć koja zagreva granitno kamenje koje se nalazi na vrhu peći te tako postiže vrlo visoke temperature, a malu vlažnost.</li>
+    <li class="fa fa-certificate"> TURSKO  KUPATILO ILI HAMAM – Tradicionalni hamam, odnosno tursko kupatilo slično kupatilima sa masažom iz drevnog Rima. Karakteristično za tursko kupatilo je da masažu rade profesionalni maseri, sa penom i losionima, koja uključuje piling. Maximalna temperatura unutar parnih kupatila je 50 stepeni.</li>
+    <li class="fa fa-certificate"> SPA – Obicno obuhvata zatvoreni bazen, saunu, tursko kupatilo, hidromasažnu kadu, trim kabinet i pruža uslugu masaže i liftinga…</li>
+    <li class="fa fa-certificate"> ZNAK ZABRANJENO BACANJE  TOALET PAPIRA U WC ŠOLJU  – nalazi se u skoro svim objektima u Grčkoj, pa tako i u vilama, hotelima, restoranima… i predstavlja upozorenje da se u WC šolju ne baca toalet papir  i ne prosipa masnoća i slično, zbog standardno uskih kanalizacionih cevi i čestih zagušenja.</li>
+  </ul>
+  <hr>
+  <h4>Oznake koje predstavljaju vrstu hotelske usluge</h4>
+
+  <ul>
+    <li class="fa fa-certificate"> BB / ND – bed and breakfast / noćenje sa doručkom</li>
+    <li class="fa fa-certificate"> HB / PP – half board, polupansion (najčešće doručak i večera, a u dogovoru putnika direktno sa hotelskim osobljem večera se može zameniti za ručak)</li>
+    <li class="fa fa-certificate"> FB / PA – full board, pun pansion (doručak, ručak i večera)</li>
+    <li class="fa fa-certificate"> ALL – all inclusive/ sve uključeno (obuhvata doručak, ručak i večeru i sva lokalna pića zemlje u kojoj se putnik nalazi)</li>
+    <li class="fa fa-certificate"> ŠVEDSKI STO ili BUFFET  – samoposluživanje hranom u neograničenim količinama, u hotelu ili restoranu za vreme redovnih obroka</li>
+    <li class="fa fa-certificate"> MENU – odabir obroka, obično dan unapred, između dva ili tri jela u hotelu ili restoranu, koji se poslužuje u ograničenim količinama</li>
+    <li class="fa fa-certificate"> KONTINENTALNI DORUČAK  – slano-slatki doručak sa čajem ili kafom koji se poslužuje u ograničenim količinama</li>
+    <li class="fa fa-certificate"> ENGLESKI DORUČAK  – slani doručak specifičnog sadržaja (jaja, slanina, sir, tost…) koji se poslužuje u ograničenim količinama</li>
+    <li class="fa fa-certificate"> A LA CARTE  – odabir jela i pića iz jelovnika</li>
+    <li class="fa fa-certificate"> NAJAM (NA) – primjenjuje se kod studija i apartmana i uključuje troškove električne energije, vode, korišćenja inventara i komunalnu taksu. Posteljina je sastavni deo inventara, ali ne i peškiri, toalet papir, sapuni, sredstva za održavanje higijene i pranje posuđa. Gosti sami iznose smeće i održavaju higijenu. Najam počinje prvog dana izmedju 14,00 i 16,00 časova, a završava poslednjeg dana boravka u 09.00 časova.</li>
+    <li class="fa fa-certificate"> ALL INCLUSIVE – skraćenica na engleskom jeziku, odnosno sve uključeno (određena hrana i piće u propisanom vremenskom intervalu i dodatni hotelski sadržaji precizirani u specifikaciji hotela, tzv. AI programu koji ima svaki hotel sa tom uslugom.</li>
+  </ul>
+  <hr>
+  <h4>Oznake koje predstavljaju vrstu i opremljenost sobe</h4>
+
+  <ul>
+    <li class="fa fa-certificate"> 1/1 – jednokrevetna soba</li><br>
+    <li class="fa fa-certificate"> 1/2 – dvokrevetna soba</li><br>
+    <li class="fa fa-certificate"> 1/2+1 – dvokrevetna soba sa pomoćnim ležajem</li><br>
+    <li class="fa fa-certificate"> 1/3 – trokrevetna soba</li><br>
+    <li class="fa fa-certificate"> 1/3+1 – trokrevetna soba sa pomoćnim ležajem</li><br>
+    <li class="fa fa-certificate"> 1/4 – četvorokrevetna soba</li><br>
+    <li class="fa fa-certificate"> 1/5 – petokrevetna soba</li><br>
+    <li class="fa fa-certificate"> 1/6 duplex – šestokrevetna soba sa dve odvojene spavaće sobe i odvojenom kuhinjom</li>
+    <li class="fa fa-certificate"> SOBA – smeštajna jedinica u hotelu ili vili koja nema kuhinjske elemente, a ponekad ni terasu</li>
+    <li class="fa fa-certificate"> SUPERIOR SOBA – soba u hotelu veće kvadrature i kvalitetnije opreme od standardne</li>
+    <li class="fa fa-certificate"> APARTMAN  (APP ili APT) – apartman – termin podrazumeva jednu ili više spavaćih soba, kuhinju sa trpezarijom i kupatilo.</li>
+    <li class="fa fa-certificate"> STUDIO (STD) – apartman – termin podrazumeva spavaću sobu i kuhinju kao jednu celinu te pripadajuće kupatilo.</li>
+    <li class="fa fa-certificate"> JUNIOR SUITE – soba u hotelu (jedna prostorija koja može biti podeljena paravanom ili slično) odgovarajuće kvadrature za četiri osobe sa minimum dva prava i dva pomoćna ležaja ili sofom za dvoje dece, isto ili bolje opremljena od superior sobe.</li>
+    <li class="fa fa-certificate"> MEZONETA – “Jednosoban ili dvosoban stan” – smeštajna jedinica u vili u dva nivoa koja se sastoji od jedne ili dve spavaće sobe sa dva do tri ležaja, dnevnog boravka u kojem se nalaze kuhinjski elementi (osim u hotelu), jedan ili dva ležaja, odnosno sofa ili ležaj na otvaranje za jednu do dve osobe, kupatila i terase. Drugi, viši nivo ili sprat, su najčešće povezani kružmim stepenicama sa nižim nivoom i ima niži, kosi plafon.</li>
+    <li class="fa fa-certificate"> SUITE – vrsta sobe u hotelu značajno veća od ostalih, koja je predviđena najčešće za porodice ili one koji žele više komfora. Hotel može posedovati nekoliko tipova ovakvih soba, a u hotelima visokih kategorija postoje suit-ovi nazvani po raznim kraljevima, sultanima i sl… što jasno govori o njihovom luksuzu.</li>
+    <li class="fa fa-certificate"> FAMILY ROOM  – “soba za celu porodicu” (najčešće je uzimaju roditelji sa dvoje dece). Može imati dve odvojene sobe, ali i ne mora.</li>
+    <li class="fa fa-certificate"> INTERCONECTED ROOMS  – “povezane sobe” – sobe koje se nalaze jedna pored druge, svaka ima svoj ulaz, ali i zajednička vrata koja ih povezuju. Najčešće ih koriste porodice.</li>
+    <li class="fa fa-certificate"> FRANCUSKI LEŽAJ – ležaj za dve osobe minimalne dimenzije 140 cm</li>
+    <li class="fa fa-certificate"> SOFA ili KAUČ – ležaj sa naslonom, obično na otvaranje ili razvlačenje, sa rukohvatima sa strane, manje udoban i manjih dimenzija od standardnih ležajeva</li>
+    <li class="fa fa-certificate"> POMOĆNI LEŽAJ ili LEŽAJ KOJI SE IZVLAČI (PL) – ležaj koji može znatno smanjiti prostor u sobi, studiju ili apartmanu i često je manji od standardnog ležaja, na izvlačenje, prenosiv, metalni ili drveni, fotelja i sl., sa dušekom tanjim od standardnog.</li>
+    <li class="fa fa-certificate"> KATEGORIJA HOTELA ILI VILE – Definiše kvalitet smeštaja u vilama/hotelima i kvalitet hrane i usluge u hotelima, a simbol oznake (slovo ili zvezdica) zavisi od lokalnih zakona.</li>
+    <li class="fa fa-certificate"> VILA – Smeštajni objekat namenjen letnjem smeštaju gostiju, bez grejanja. Nema recepciju i sastoji se iz studija apartmana, a vrlo retko i od soba. Kategorija se definiše slovima i organizator ne može garantovati kvalitet i verodostojnost lokalne kategorizacije.</li>
+    <li class="fa fa-certificate"> TWC – kupatilo sa stojećom tuš kadom</li><br>
+    <li class="fa fa-certificate"> TV – televizor koji može biti različite veličine sa ili bez daljinskog upravljača</li>
+    <li class="fa fa-certificate"> SAT TV – televizor na kojem se mogu posmatrati pored zemaljskih programa i satelitski programi od kojih se neki posebno plaćaju na recepciji hotela po tačno određenoj tarifi.</li>
+    <li class="fa fa-certificate"> A/C – centralni ili split (pojedinačni) klima uređaj</li>
+    <li class="fa fa-certificate"> MINI BAR – mali frižider koji se nalazi u hotelskoj sobi. Sadrži nekoliko vrsta alkoholnih i bezalkoholnih pića, snack i slatkiše. Ne sme služiti za odlaganje privatnih namirnica putnika. Ukoliko soba nema mini bar, može se posebno naručiti.</li>
+    <li class="fa fa-certificate"> TERASA – otvoreni prostor u smeštajnoj jedinici dovoljno velik na koji može stati garnitura za sedenje</li>
+    <li class="fa fa-certificate"> BALKON – otvoreni prostor u smeštajnoj jedinici koji najčešce nije dovoljno veliki za odgovarajuću garnituru za sedenje</li>
+    <li class="fa fa-certificate"> FRANCUSKI BALKON – otvoreni prostor u smeštajnoj jedinici (mali balkon) dovoljno veliki da na njemu može boraviti u stojećem stavu jedna odrasla osoba</li>
+  </ul>
+  <hr>
+  <h4>Oznake koje se odnose na  vrstu pogleda koji se pruža  iz hotelske sobe</h4>
+
+  <ul>
+    <li class="fa fa-certificate"> I/V – inland view – pogled na okolinu hotela</li><br>
+    <li class="fa fa-certificate"> S/V – sea view – pogled na more</li><br>
+    <li class="fa fa-certificate"> P/V – pool view – pogled na bazen</li><br>
+    <li class="fa fa-certificate"> M/V – mountain view – pogled na planinu</li><br>
+    <li class="fa fa-certificate"> G/V – garden view – pogled na vrt</li><br>
+  </ul>
+  <hr>
+  <h4>Avio saobraćaj</h4>
+
+  <ul>
+    <li class="fa fa-certificate"> TICKETING – izdavanje avio karata E-TICKET(etix) – elektronska karta FARE – cena, tarifa</li><br>
+    <li class="fa fa-certificate"> DISCOUNTED FARE – cena sa popustom</li><br>
+    <li class="fa fa-certificate"> TIME  TABLE – red letenja</li><br>
+    <li class="fa fa-certificate"> AIRCRAFT TYPE – tip aviona FLIGHT TIME  – vreme trajanja leta TIME  LIMIT – rok za kupovinu karte CANCELATION –  storniranje rezervacije</li>
+    <li class="fa fa-certificate"> REBOOKING – promena datuma putovanja REROUTING – promena destinacije UPGRADING – doplata do skuplje tarife ili klase DEPARTURE – poletanje, polazak aviona ARRIVAL  – sletanje, dolazak aviona</li>
+    <li class="fa fa-certificate"> DELAY – kašnjenje aviona</li><br>
+    <li class="fa fa-certificate"> CANCELED – otkazan let</li><br>
+    <li class="fa fa-certificate"> UNACCOMPANIED MINOR(UM) – deca od 5-12 god koja putuju sama, na check in-u ih čeka stujardesa CHECK IN – neophodna procedura pre ulaska u avion, kada se putnik na šalteru prijavljuje na let, predaje svoj prtljag, daje avio kartu na uvid (ukoliko karta nije u elektronskom obliku)i uzima boarding pass.</li>
+    <li class="fa fa-certificate"> BOARDING PASS / CARD – propusnica sa kojom putnik ulazi u avion. Na njoj se nalaze podaci o broju putnikovog sedišta, klasi i gejtu na kome se nalazi avion.</li>
+    <li class="fa fa-certificate"> GATE – parkirno mesto aviona. Na boarding pass-u piše broj gejta gde se nalazi putnikov avion. Najčešće 30 minuta pre poletanja aviona potrebno je da se putnik pojavi kod gejta radi finalne provere ručnog prtljaga.</li>
+    <li class="fa fa-certificate"> BAGGAGE  / LUGGAGE – prtljag. Može biti ručni ili onaj koji se predaje prilikom CHECK IN-a u avion.</li>
+    <li class="fa fa-certificate"> HAND BAGGAGE  / LUGGAGE – ručni prtljag – putnik ga može poneti sa sobom u avion. Uvek treba voditi računa o veličini i ne preterivati prilikom pakovanja ove vrste prtljaga, a takođe i o njegovom sadržaju (strogo je zabranjeno unositi u avion: zapaljive materije, hemikalije, oružje, peroreze, makaze, turpije za nokte…)</li>
+    <li class="fa fa-certificate"> OVERSIZE BAGGAGE  / LUGGAGE – spada u ručni prtljag, ali mu je veličina veća od propisane. Prilikom ulaska u avion predaje se posadi aviona, a nakon sletanja na destinaciju moze se naći na šalteru “OVERSIZE BAGGAGE / LUGGAGE”</li>
+    <li class="fa fa-certificate"> OWERWEIGHT – prekomerna težina prtljaga koja se konstatuje prilikom CHECK IN-a. Najčešće propisana težina prtljaga koji se može predati u avion je 20 kg po putniku. Za svaki prekomerni kilogram, putnik mora dodatno da plati.</li>
+    <li class="fa fa-certificate"> OVERBOOKING – termin koji označava prekoračenu popunjenost aviona i pokazuje da je izvršen veći broj rezervacija u odnosu na raspoloživi kapacitet.</li>
+    <li class="fa fa-certificate"> WAITING LIST – prilikom kupovine avionske karte putnik, zbog popunjenosti aviona, može biti stavljen na waiting listu (lista čekanja), što znači da je avion popunjen i da će putnik moći da ostvari svoje putovanje samo ako neko od već postojećih putnika otkaže svoje putovanje.</li>
+    <li class="fa fa-certificate"> APT TAX – aerodromska taksa. Svaki aerodrom je ima. Najčešće se plaća zajedno sa kartom, ali moze sa plaćati i na samom aerodromu.</li>
+    <li class="fa fa-certificate"> SECURITY TAX – sigurnosna taksa</li>
+    <li class="fa fa-certificate"> TRANSIT  – Najčešće prilikom dužih putovanja može se desiti da putnik mora da promeni avion. Tranzit je pojam koji predstavlja prelaženje sa jednog leta na drugi. Tada je putnik u mogućnosti da koristi usluge restorana, kafea, duty free shop-a i svega ostalog u zavisnosti od veličine i opremljenosti aerodroma.</li>
+    <li class="fa fa-certificate"> CLASS – klase u avionu razlikuju se po kvalitetu usluge</li>
+    <li class="fa fa-certificate"> FIRST  CLASS – prva klasa, ujedno i najbolja. Putnici ove klase su smešteni na samom početku aviona, imaju veća i udobnija sedišta, bolji kvalitet usluge (hrane, pića), pre poletanja aviona mogu se opustiti u posebnim prostorijama na aerodromima predviđenim za ovu klasu, a prilikom menjanja aviona, na daljim destinacijama, mogu sebi priuštiti da se osveže u đakuziju, istuširaju, presvuku… Ovu klasu imaju samo neke avio kompanije.</li>
+    <li class="fa fa-certificate"> BUSINESS CLASS – biznis klasa. U pojedinim avio kompanijama, kada ne postoji first class ovo je najbolja klasa. Podrazumeva sličan kvalitet usluga kao i prva klasa, a od avio kompanija zavisi nivo tog kvaliteta.</li>
+    <li class="fa fa-certificate"> ECONOMY CLASS – ekonomska klasa. Predstavlja najčešće korišćenu klasu. Kvalitet usluge u ovoj klasi se može razlikovati u zavisnosti od avio kompanije, ali ne sme odstupati od propisanih standarda. Za razliku od prve i biznis klase, korisnicima usluga ekonomske klase nije omogućen luksuz posebnih prostorija pre poletanja aviona, i u tranzitu. Shodno usluzi, cena karte u ekonomskoj klasi je najniža.</li>
+  </ul>
+</div>
+
+{% endblock %}
