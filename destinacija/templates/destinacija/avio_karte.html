@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="avio_karte">
+  <h2>Avio karte</h2>
+  <img src="../../static/images/avion.jpg" alt="Avion"><hr>
+  <div><b><i>Korisnici naših usluga imaju mogućnost rezervacije i kupovine avio-karata svih svetskih vazduhoplovnih kompanija za izuzetno veliki broj inostranih destinacija. Sarađujemo sa turističkom agencijom “MY WAY” koja je povezana sa najvećim distributivnim rezervacionim sistemom u svetu – “Amadeusom”, koji omogućava automatsku rezervaciju avio-karata, hotelskog smeštaja i rent a car usluga u mnogobrojnim gradovima na svim kontinentima.</b></i>
+  </div>
+</div>
+
+
+{% endblock %}
