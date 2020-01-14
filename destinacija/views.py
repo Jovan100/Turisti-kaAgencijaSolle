@@ -20,3 +20,6 @@ class TuristickiPojmoviView(TemplateView):
 
 class PutnoOsiguranjeView(TemplateView):
     template_name = 'destinacija/putno_osiguranje.html'
+
+class AvioKarteView(TemplateView):
+    template_name = 'destinacija/avio_karte.html'
