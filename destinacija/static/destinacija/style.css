@@ -49,3 +49,10 @@ ul {
 .fa-certificate::before {
   color: orange;
 }
+
+.putno_osiguranje {
+  margin-top: 14%;
+  padding: 2%;
+  margin-bottom: 5%;
+  background-color: #E0FFFF;
+}
