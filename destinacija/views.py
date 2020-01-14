@@ -11,3 +11,6 @@ from destinacija.models import (
 
 class PocetnaStranaView(TemplateView):
     template_name = 'destinacija/pocetna_strana.html'
+
+class UsloviPutovanjaView(TemplateView):
+    template_name = 'destinacija/opsti_uslovi_putovanja.html'
