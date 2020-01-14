@@ -8,4 +8,5 @@ urlpatterns = [
     path('Putno_Osiguranje/', PutnoOsiguranjeView.as_view(), name='putno_osiguranje'),
     path('Avio_Karte/', AvioKarteView.as_view(), name='avio_karte'),
     path('O_Nama/', ONamaView.as_view(), name='o_nama'),
+    path('Kontakt/', KontaktView.as_view(), name='kontakt'),
 ]
