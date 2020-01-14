@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="kontakt">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="tekst_kontakt">
+          <h4>
+            VOJVODE RADOMIRA PUTNIKA 21 <br><br>
+            ULAZ IZ KARAĐORĐEVE ULICE <br><br>
+            Radno vreme: <br>
+            Radnim danima: 9 – 19 časova <br>
+            Subotom: 9 – 14 časova <br>
+            Nedeljom: NE RADIMO <br><br>
+            <i class="fa fa-phone-square"> 013/335-144</i> <br>
+            <i class="fa fa-phone-square"> 013/21-000-11</i> <br>
+            <i class="fa fa-mobile"> 066/335-144</i> <br>
+            <i class="fa fa-envelope"> office@solle.co.rs</i> <br>
+          </h4>
+        </div>
+      </div>
+      <div class="col"><img src="../../static/images/solle_pancevo.jpg" alt="Solle Pančevo" class="img-thumbnail" id="slika_kontakt"></div>
+    </div>
+  </div>
+  <hr>
+  <div class="mapouter"><div class="gmap_canvas"><iframe width="1040" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Solle%20Vojvode%20Radomira%20Putnika%2021%2C%20Pan%C4%8Devo%20300210&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/elementor-review/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1040px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1040px;}</style></div>
+</div>
+
+{% endblock %}
