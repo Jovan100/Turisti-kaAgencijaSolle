@@ -1,0 +1,32 @@
+.opsti_uslovi_putovanja {
+  margin-top: 18%;
+  background-color: #E0FFFF;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.kolone {
+  border: 1px solid black;
+}
+
+#podaci {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+#prva_slika {
+  margin-top: 14%;
+}
+
+.sadrzaj_pocetne {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+.slike_pocetne_strane {
+  z-index: 0;
+  height: 259px;
+  width: 362px;
+}
