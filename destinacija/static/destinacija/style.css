@@ -69,11 +69,34 @@ ul {
   padding: 2%;
   margin-bottom: 5%;
   background-color: #E0FFFF;
-  display: inline-block;
 }
 
 #o_nama_slika {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.kontakt {
+  margin-top: 14%;
+  padding: 2%;
+  margin-bottom: 5%;
+  background-color: #E0FFFF;
+}
+
+.mapouter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slika_kontakt {
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tekst_kontakt {
+  text-align: center;
 }
