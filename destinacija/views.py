@@ -23,3 +23,6 @@ class PutnoOsiguranjeView(TemplateView):
 
 class AvioKarteView(TemplateView):
     template_name = 'destinacija/avio_karte.html'
+
+class ONamaView(TemplateView):
+    template_name = 'destinacija/o_nama.html'
