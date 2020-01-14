@@ -7,6 +7,7 @@ html, body{
   background-attachment: fixed;
   left: 0;
   right: 0;
+  font-family: serif;
 }
 
 header {
@@ -56,24 +57,8 @@ nav:a {
   background-color: lightgreen;
 }
 
-#podaci {
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-}
-
-#prva_slika {
-  margin-top: 14%;
-}
-
 .srednji_sadrzaj_footera {
   margin-top: 0;
-}
-
-.slike_pocetne_strane {
-  z-index: 0;
-  height: 259px;
-  width: 362px;
 }
 
 .footer {
@@ -95,12 +80,6 @@ nav:a {
 
 .footer_sadrzaj {
   padding: 4%;
-}
-
-.sadrzaj_pocetne {
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
 }
 
 #wiener {
