@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="o_nama">
+  <img src="../../static/images/solle.png" alt="SOLLE" id="o_nama_slika"><hr>
+  <b>
+  Turistička agencija SOLLE osnovana je 15. novembra 2006. godine, bavi se posredovanjem u prodaji turističkih aranžmana za Grčku, Bugarsku, Crnu Goru, Tursku, Italiju, Španiju, Egipat, Tunis… Od 11. februara 2010. poseduje Licencu za posredovanje u prodaji turističkih putovanja PTP 79/2010.<br><br>
+  U saradnji smo sa svim velikim i malim tour-operatorima u Srbiji, i omogućavamo Vam da sa nama, između ostalog, proputujete carsku Rusiju, otkrijete tajne centralne Amerike i druge egzotične destinacije. Naše cene i kvalitet usluga uspevali su da zadovolje i najzahtevnije putnike. Uvek smo na raspolaganju da Vam obezbedimo avio-karte za sve destinacije i gradove, kao i da obezbedimo putno i zdravstveno osiguranje.<br><br>
+  Stručno i ljubazno osoblje učiniće Vaš odmor još prijatnijim. Stalo nam je do Vašeg i našeg zadovoljstva – radimo tako da se sa zadovoljstvom možemo pohvaliti i Vi i mi!<br><br>
+  KAD SVI ODMARAJU, MI RADIMO ZA VAS I ZBOG VAS!<br><br>
+  Stojimo Vam na usluzi, da zajedno provedemo nezaboravne trenutke, da se vratite odmorni, nasmejani i zadovoljni. Čovek je stvoren da stvara, a “Solle” da ga odmara!<br><br>
+  I zato… PUTUJTE S OSMEHOM! S poštovanjem,<br>
+  Vaša agencija SOLLE
+  </b>
+</div>
+
+{% endblock %}
