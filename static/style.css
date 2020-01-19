@@ -128,3 +128,12 @@ nav:a {
   font-weight: normal;
   font-size: 24px;
 }
+
+.dropdown-toggle {
+  color: white;
+}
+
+.dropdown-toggle:hover {
+  background-color: blue;
+  color: orange;
+}
