@@ -100,3 +100,48 @@ ul {
 .tekst_kontakt {
   text-align: center;
 }
+
+.grcka {
+  margin-top: 14%;
+}
+
+.grcka h1, h2, h4 {
+  background-image: linear-gradient(to right, green, orange, blue);
+  margin-bottom: 2px;
+  text-align: center;
+  text-shadow: 1px 1px;
+  font-weight: bold;
+  box-shadow: 10px 10px 5px;
+  border-radius: 10px;
+}
+
+.flex-container {
+  padding: 2%;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container img {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.lista {
+  border: 1px solid blue;
+  border-radius: 22px;
+  width: 302px;
+  height: 280px;
+  text-align: center;
+  background-color: #E0FFFF;
+  margin: 20px auto;
+  margin-top: 5px;
+  box-shadow: 10px 10px 5px;
+}
+
+.procitaj_vise {
+  text-transform: none;
+  color: blue;
+}
