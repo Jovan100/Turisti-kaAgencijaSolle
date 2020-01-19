@@ -1,0 +1,115 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="grcka">
+<h1>Kopno</h1>
+<h4>Orfanski zaliv - Zaliv Svetog Đorđa</h4>
+<div class="flex-container">
+{% for destinacija in kopno_orfanska %}
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+     <a href="#"><p>{{destinacija.naziv}}</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+   </div>
+ {% endfor %}
+ </div>
+
+ <h2>Halkidiki</h2>
+ <h4>Kasandra - prvi prst</h4>
+ <div class="flex-container">
+ {% for destinacija in kopno_kasandra %}
+     <div class="lista">
+      <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+      <a href="#"><p>{{destinacija.naziv}}</p></a>
+      <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+  {% endfor %}
+  </div>
+
+  <h4>Sitonija - drugi prst</h4>
+  <div class="flex-container">
+  {% for destinacija in kopno_sitonija %}
+      <div class="lista">
+       <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+       <a href="#"><p>{{destinacija.naziv}}</p></a>
+       <a href="#" class="procitaj_vise">Pročitaj više...</a>
+     </div>
+   {% endfor %}
+   </div>
+
+   <h4>Atos - drugi prst</h4>
+   <div class="flex-container">
+   {% for destinacija in kopno_atos %}
+       <div class="lista">
+        <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+        <a href="#"><p>{{destinacija.naziv}}</p></a>
+        <a href="#" class="procitaj_vise">Pročitaj više...</a>
+      </div>
+    {% endfor %}
+    </div>
+
+    <h2>Olimpska regija</h2>
+    <div class="flex-container">
+    {% for destinacija in kopno_olimpska %}
+        <div class="lista">
+         <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+         <a href="#"><p>{{destinacija.naziv}}</p></a>
+         <a href="#" class="procitaj_vise">Pročitaj više...</a>
+       </div>
+     {% endfor %}
+     </div>
+
+     <h2>Egejsko more</h2>
+     <div class="flex-container">
+     {% for destinacija in kopno_egej %}
+         <div class="lista">
+          <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+          <a href="#"><p>{{destinacija.naziv}}</p></a>
+          <a href="#" class="procitaj_vise">Pročitaj više...</a>
+        </div>
+      {% endfor %}
+      </div>
+
+      <h2>Jonsko more</h2>
+      <div class="flex-container">
+      {% for destinacija in kopno_jonska %}
+          <div class="lista">
+           <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+           <a href="#"><p>{{destinacija.naziv}}</p></a>
+           <a href="#" class="procitaj_vise">Pročitaj više...</a>
+         </div>
+       {% endfor %}
+       </div>
+
+ <h1>Ostrva</h1>
+
+ <h2>Egejsko more</h2>
+ <div class="flex-container">
+ {% for destinacija in ostrva_egej %}
+     <div class="lista">
+      <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+      <a href="#"><p>{{destinacija.naziv}}</p></a>
+      <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>Jonsko more</h2>
+<div class="flex-container">
+{% for destinacija in ostrva_jonska %}
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+     <a href="#"><p>{{destinacija.naziv}}</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+   </div>
+ {% endfor %}
+</div>
+
+</div>
+{% endblock %}
