@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="grcka">
+ <h1>Ostrva</h1>
+
+ <h2>Egejsko more</h2>
+ <div class="flex-container">
+ {% for destinacija in ostrva_egej %}
+     <div class="lista">
+      <a href="http://localhost:8000/{{destinacija.naziv}}/"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+      <a href="http://localhost:8000/{{destinacija.naziv}}/"><p>{{destinacija.naziv}}</p></a>
+      <a href="http://localhost:8000/{{destinacija.naziv}}/" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+  {% endfor %}
+</div>
+
+<h2>Jonsko more</h2>
+<div class="flex-container">
+{% for destinacija in ostrva_jonska %}
+    <div class="lista">
+     <a href="http://localhost:8000/{{destinacija.naziv}}/"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+     <a href="http://localhost:8000/{{destinacija.naziv}}/"><p>{{destinacija.naziv}}</p></a>
+     <a href="http://localhost:8000/{{destinacija.naziv}}/" class="procitaj_vise">Pročitaj više...</a>
+   </div>
+ {% endfor %}
+</div>
+
+</div>
+{% endblock %}
