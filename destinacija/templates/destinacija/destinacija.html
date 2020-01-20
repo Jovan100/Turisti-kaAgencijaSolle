@@ -1,0 +1,64 @@
+<!--
+</div>
+-->
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="destinacija">
+
+<div id="sadrzaj_destinacije">
+  <h1>{{destinacija.naziv}}</h1>
+  <img id="myImg" style="cursor: zoom-in" src="{{destinacija.slika.url}}" alt="{{destinacija.naziv}}">
+  <p>
+  {{destinacija.opis}}</p>
+
+{% if cenovnici %}
+<div class="tabela_cenovnika">
+  <table align="center">
+    <tr>
+      <th>CENOVNICI</th>
+    </tr>
+    {% for cenovnik in cenovnici %}
+    <tr>
+      <td><a href="{{cenovnik.fajl.url}}" target="_blank">{{cenovnik.destinacija}} - {{cenovnik.broj_nocenja}} noći - {{cenovnik.agencija}}
+        {% if cenovnik.polasci %}
+        - {{cenovnik.polasci}}
+        </a>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+<div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="450" id="gmap_canvas" src="{{destinacija.mapa}}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div><style>.mapouter{position:relative;text-align:center;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
+</div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+{% endblock %}
