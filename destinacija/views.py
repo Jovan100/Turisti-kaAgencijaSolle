@@ -69,3 +69,56 @@ class GrckaListView(View):
             'ostrva_egej': ostrva_egej,
             'ostrva_jonska': ostrva_jonska,
             })
+
+class GrckaKopnoView(View):
+    def get(self, request, *args, **kwargs):
+        zemlja = Zemlja.objects.get(naziv="Grčka")
+        kopno = KategorijaDestinacije.objects.get(naziv="Kopno")
+        orfanska = Regija.objects.get(naziv="Orfanski zaliv")
+        egej = Regija.objects.get(naziv="Egejska regija")
+        jonska = Regija.objects.get(naziv="Jonska regija")
+        olimpska = Regija.objects.get(naziv="Olimpska regija")
+        atos = Regija.objects.get(naziv="Atos - treći prst")
+        sitonija = Regija.objects.get(naziv="Sitonija - drugi prst")
+        kasandra = Regija.objects.get(naziv="Kasandra - prvi prst")
+        kopno_orfanska = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=orfanska)
+        kopno_egej = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=egej)
+        kopno_jonska = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=jonska)
+        kopno_olimpska = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=olimpska)
+        kopno_atos = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=atos)
+        kopno_sitonija = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=sitonija)
+        kopno_kasandra = Destinacija.objects.filter(zemlja=zemlja, kategorija=kopno, regija=kasandra)
+        return render(request, 'destinacija/kopno.html',
+            {
+            'kopno_orfanska': kopno_orfanska,
+            'kopno_egej': kopno_egej,
+            'kopno_jonska': kopno_jonska,
+            'kopno_olimpska': kopno_olimpska,
+            'kopno_atos': kopno_atos,
+            'kopno_sitonija': kopno_sitonija,
+            'kopno_kasandra': kopno_kasandra
+            })
+
+class GrckaOstrvaView(View):
+    def get(self, request, *args, **kwargs):
+        zemlja = Zemlja.objects.get(naziv="Grčka")
+        ostrvo = KategorijaDestinacije.objects.get(naziv="Ostrva")
+        egej = Regija.objects.get(naziv="Egejska regija")
+        jonska = Regija.objects.get(naziv="Jonska regija")
+        ostrva_egej = Destinacija.objects.filter(zemlja=zemlja, kategorija=ostrvo, regija=egej)
+        ostrva_jonska = Destinacija.objects.filter(zemlja=zemlja, kategorija=ostrvo, regija=jonska)
+        return render(request, 'destinacija/ostrva.html',
+            {
+            'ostrva_egej': ostrva_egej,
+            'ostrva_jonska': ostrva_jonska,
+            })
+
+class DestinacijaView(View):
+    def get(self, request, naziv_destinacije):
+        destinacija = Destinacija.objects.get(naziv=naziv_destinacije)
+        cenovnici = Cenovnik.objects.filter(destinacija=destinacija.id)
+        return render(request, 'destinacija/destinacija.html',
+            {
+            'destinacija': destinacija,
+            'cenovnici': cenovnici
+            })
