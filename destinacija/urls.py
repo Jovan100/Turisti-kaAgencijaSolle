@@ -10,4 +10,7 @@ urlpatterns = [
     path('O_Nama/', ONamaView.as_view(), name='o_nama'),
     path('Kontakt/', KontaktView.as_view(), name='kontakt'),
     path('Grčka/', GrckaListView.as_view(), name='grcka'),
+    path('Grčka/Kopno/', GrckaKopnoView.as_view(), name='grcka_kopno'),
+    path('Grčka/Ostrva/', GrckaOstrvaView.as_view(), name='grcka_ostrva'),
+    path('<str:naziv_destinacije>/', DestinacijaView.as_view(), name='destinacija')
 ]
