@@ -43,7 +43,7 @@ class Destinacija(models.Model):
     naziv = models.CharField(max_length=100, unique=True)
     zemlja = models.ForeignKey(Zemlja, on_delete=models.CASCADE)
     kategorija = models.ForeignKey(KategorijaDestinacije, on_delete=models.CASCADE)
-    regija = models.ForeignKey(Regija, on_delete=models.SET_NULL, null=True)
+    regija = models.ForeignKey(Regija, on_delete=models.SET_NULL, null=True, blank=True)
     opis = models.TextField(null=True, blank=True)
     preporuka = models.BooleanField(default=False)
     slika = models.ImageField(upload_to='slike', blank=True, null=True)
