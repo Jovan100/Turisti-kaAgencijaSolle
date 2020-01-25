@@ -125,3 +125,16 @@ class DestinacijaView(View):
 
 class LetoView(TemplateView):
     template_name = 'destinacija/leto.html'
+
+class LetoZemljaView(View):
+    def get(self, request, zemlja):
+        zemlja_id = Zemlja.objects.get(naziv=zemlja)
+        kopno = KategorijaDestinacije.objects.get(naziv="Kopno")
+        ostrvo = KategorijaDestinacije.objects.get(naziv="Ostrva")
+        destinacije_kopno = Destinacija.objects.filter(zemlja=zemlja_id, kategorija=kopno,)
+        destinacije_ostrva = Destinacija.objects.filter(zemlja=zemlja_id, kategorija=ostrvo,)
+        return render(request, 'destinacija/leto_zemlja.html', {
+        'destinacije_kopno': destinacije_kopno,
+        'destinacije_ostrva': destinacije_ostrva,
+        'zemlja': zemlja
+        })
