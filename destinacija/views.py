@@ -122,3 +122,6 @@ class DestinacijaView(View):
             'destinacija': destinacija,
             'cenovnici': cenovnici
             })
+
+class LetoView(TemplateView):
+    template_name = 'destinacija/leto.html'
