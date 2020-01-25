@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="metrople">
+<h1>Metropole</h1>
+
+<div class="flex-container">
+{% for destinacija in destinacije %}
+    <div class="lista_metropola">
+     <a href="http://localhost:8000/{{destinacija.naziv}}/"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+     <a href="http://localhost:8000/{{destinacija.naziv}}/"><p>{{destinacija.naziv}}</p></a>
+     <p>{{destinacija.zemlja}}</p>
+     <a href="http://localhost:8000/{{destinacija.naziv}}/" class="procitaj_vise">Pročitaj više...</a>
+   </div>
+ {% endfor %}
+ </div>
+</div>
+
+{% endblock %}
