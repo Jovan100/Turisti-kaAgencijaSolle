@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="leto_zemlja">
+<h1>{{zemlja}}</h1>
+
+<div class="flex-container">
+{% for destinacija in destinacije_kopno %}
+    <div class="lista">
+     <a href="http://localhost:8000/{{destinacija.naziv}}/"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+     <a href="http://localhost:8000/{{destinacija.naziv}}/"><p>{{destinacija.naziv}}</p></a>
+     <a href="http://localhost:8000/{{destinacija.naziv}}/" class="procitaj_vise">Pročitaj više...</a>
+   </div>
+ {% endfor %}
+ {% for destinacija in destinacije_ostrva %}
+     <div class="lista">
+      <a href="http://localhost:8000/{{destinacija.naziv}}/"><img class="img-responsive" src="{{ destinacija.slika.url }}" alt="Slika"></a><br>
+      <a href="http://localhost:8000/{{destinacija.naziv}}/"><p>{{destinacija.naziv}}</p></a>
+      <a href="http://localhost:8000/{{destinacija.naziv}}/" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+  {% endfor %}
+ </div>
+</div>
+
+{% endblock %}
