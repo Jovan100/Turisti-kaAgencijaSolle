@@ -313,3 +313,17 @@ html, body {
   box-shadow: 10px 10px 5px;
   border-radius: 10px;
 }
+
+.leto_zemlja {
+  margin-top: 14% !important;
+}
+
+.leto_zemlja h1 {
+  background-image: linear-gradient(to right, green, orange, blue);
+  margin-bottom: 2px;
+  text-align: center;
+  text-shadow: 1px 1px;
+  font-weight: bold;
+  box-shadow: 10px 10px 5px;
+  border-radius: 10px;
+}
