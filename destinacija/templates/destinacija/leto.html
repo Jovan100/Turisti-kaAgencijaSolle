@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block naslov %}Solle{% endblock %}
+{% block static %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'destinacija/style.css' %}">
+{% endblock %}
+{% block sadrzaj %}
+
+<div class="leto">
+  <h1>Leto 2020.</h1>
+
+  <div class="flex-container">
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/bugarska.jpg" alt="Bugarska"></a><br>
+     <a href="#"><p>Bugarska</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/crna-gora.jpg" alt="Crna Gora"></a><br>
+     <a href="#"><p>Crna Gora</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/egipat.jpg" alt="Egipat"></a><br>
+     <a href="#"><p>Egipat</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/italija.jpg" alt="Italija"></a><br>
+     <a href="#"><p>Italija</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/kipar.jpg" alt="Kipar"></a><br>
+     <a href="#"><p>Kipar</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/spanija.jpg" alt="Španija"></a><br>
+     <a href="#"><p>Španija</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/tunis.jpg" alt="Tunis"></a><br>
+     <a href="#"><p>Tunis</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+    <div class="lista">
+     <a href="#"><img class="img-responsive" src="../../static/images/turska.jpg" alt="Turska"></a><br>
+     <a href="#"><p>Turska</p></a>
+     <a href="#" class="procitaj_vise">Pročitaj više...</a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
