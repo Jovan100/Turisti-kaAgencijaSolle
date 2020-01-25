@@ -132,9 +132,17 @@ class LetoZemljaView(View):
         kopno = KategorijaDestinacije.objects.get(naziv="Kopno")
         ostrvo = KategorijaDestinacije.objects.get(naziv="Ostrva")
         destinacije_kopno = Destinacija.objects.filter(zemlja=zemlja_id, kategorija=kopno,)
-        destinacije_ostrva = Destinacija.objects.filter(zemlja=zemlja_id, kategorija=ostrvo,)
+        destinacije_ostrva = Destinacija.objects.filter(zemlja=zemlja_id, kategorija=ostrvo)
         return render(request, 'destinacija/leto_zemlja.html', {
         'destinacije_kopno': destinacije_kopno,
         'destinacije_ostrva': destinacije_ostrva,
         'zemlja': zemlja
+        })
+
+class MetropoleView(View):
+    def get(self, request, *args, **kwargs):
+        metropole = KategorijaDestinacije.objects.get(naziv="Metropole")
+        destinacije = Destinacija.objects.filter(kategorija=metropole).order_by('zemlja')
+        return render(request, 'destinacija/metropole.html', {
+        'destinacije': destinacije
         })
