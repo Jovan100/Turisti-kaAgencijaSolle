@@ -12,6 +12,7 @@ urlpatterns = [
     path('Grčka/', GrckaListView.as_view(), name='grcka'),
     path('Grčka/Kopno/', GrckaKopnoView.as_view(), name='grcka_kopno'),
     path('Grčka/Ostrva/', GrckaOstrvaView.as_view(), name='grcka_ostrva'),
+    path('Metropole/', MetropoleView.as_view(), name='metropole'),
     path('Leto/', LetoView.as_view(), name='leto'),
     path('Leto/<str:zemlja>/', LetoZemljaView.as_view(), name='leto_zemlja'),
     path('<str:naziv_destinacije>/', DestinacijaView.as_view(), name='destinacija'),
