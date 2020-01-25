@@ -15,13 +15,13 @@ class AgencijaAdmin(admin.ModelAdmin):
         model = Agencija
 
 class CenovnikAdmin(admin.ModelAdmin):
-    search_fields = ['naziv']
+    search_fields = ['naziv', 'destinacija__naziv', 'agencija__naziv']
     list_display = ['naziv', 'destinacija', 'agencija', 'broj_nocenja', 'polasci', 'fajl']
     class Meta:
         model = Cenovnik
 
 class DestinacijaAdmin(admin.ModelAdmin):
-    search_fields = ['naziv']
+    search_fields = ['naziv', 'zemlja__naziv', 'kategorija__naziv', 'regija__naziv']
     list_display = ['naziv', 'zemlja', 'kategorija', 'preporuka', 'regija', 'slika']
     list_filter = ['preporuka']
     class Meta:
